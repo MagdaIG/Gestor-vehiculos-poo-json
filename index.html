@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Vehículos | Sistema Profesional</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="header-content">
+      <i class="fas fa-car-alt header-icon"></i>
+      <h1>Gestor de Vehículos</h1>
+    </div>
+    <span class="badge">v2.0</span>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button id="btnConsola" class="btn btn-primary" aria-label="Mostrar en consola" data-tooltip="Abrir consola (⌥⌘I en Mac, F12 en Windows)">
+        <i class="fas fa-terminal"></i>
+        <span>Consola</span>
+      </button>
+
+      <button id="btnPantalla" class="btn btn-primary" aria-label="Mostrar lista">
+        <i class="fas fa-list-ul"></i>
+        <span>Lista</span>
+      </button>
+
+      <button id="btnJSON" class="btn btn-secondary" aria-label="Ver JSON">
+        <i class="fas fa-code"></i>
+        <span>JSON</span>
+      </button>
+
+      <button id="btnLimpiar" class="btn btn-danger" aria-label="Limpiar pantalla">
+        <i class="fas fa-broom"></i>
+        <span>Limpiar</span>
+      </button>
+    </div>
+
+    <section class="card">
+      <div class="card-header">
+        <i class="fas fa-car"></i>
+        <h2>Lista de Vehículos</h2>
+      </div>
+      <div class="card-body">
+        <ul id="listaVehiculos" class="vehicle-list">
+          <li class="empty-state">
+            <i class="fas fa-info-circle"></i>
+            <p>Selecciona "Mostrar lista" para visualizar los vehículos</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <i class="fas fa-database"></i>
+        <h2>Datos Técnicos</h2>
+      </div>
+      <div class="card-body">
+        <pre id="jsonOutput"><code>// Los datos JSON aparecerán aquí</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Logo y derechos -->
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <i class="fas fa-car-side"></i>
+          <span class="brand-name">Gestor de Vehículos</span>
+        </div>
+        <div class="copyright">
+          <small>© 2023 Todos los derechos reservados</small>
+        </div>
+      </div>
+
+      <!-- Enlaces -->
+      <div class="footer-links">
+        <a href="https://inalaf.ca" target="_blank" class="footer-link" aria-label="Sitio web">
+          <i class="fas fa-globe"></i>
+          <span class="link-text">Web</span>
+        </a>
+        <a href="https://github.com/MagdaIG" target="_blank" class="footer-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+          <span class="link-text">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/minalaf/" target="_blank" class="footer-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+          <span class="link-text">LinkedIn</span>
+        </a>
+      </div>
+
+      <!-- Créditos -->
+      <div class="footer-credits">
+        <div class="credits-content">
+          <span class="credits-text">Desarrollado con <i class="fas fa-heart"></i> por</span>
+          <span class="developer-name">Magdalena Inalaf G.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "vehiculos": [
+    {
+      "tipo": "auto",
+      "marca": "Mazda",
+      "modelo": "3",
+      "año": 2021,
+      "color": "Rojo",
+      "kilometraje": 23000,
+      "numeroDePuertas": 4,
+      "transmision": "Automática",
+      "combustible": "Gasolina"
+    },
+    {
+      "tipo": "motocicleta",
+      "marca": "Kawasaki",
+      "modelo": "Ninja 400",
+      "año": 2023,
+      "color": "Verde",
+      "kilometraje": 1200,
+      "tipoDeManillar": "Clip-on",
+      "cilindrada": "399cc"
+    },
+    {
+      "tipo": "camion",
+      "marca": "Scania",
+      "modelo": "R500",
+      "año": 2017,
+      "color": "Azul",
+      "kilometraje": 450000,
+      "capacidadDeCarga": 24000,
+      "ejes": 3,
+      "tipoRemolque": "Articulado"
+    }
+  ]
+}
